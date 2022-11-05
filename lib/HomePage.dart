@@ -25,11 +25,11 @@ class _HomePageState extends State<HomePage> {
   String returnFormattedText() {
     var milli = stopwatch.elapsed.inMilliseconds;
 
-    String milliseconds = (milli % 1000).toString().padLeft(3, "0");
-    String seconds = ((milli ~/ 1000) % 60).toString().padLeft(2, "0");
-    String minutes = ((milli ~/ 1000) ~/ 60).toString().padLeft(2, "0");
+    String millisec = (milli % 1000).toString().padLeft(4, "0");
+    String sec = ((milli ~/ 1000) % 60).toString().padLeft(3, "0");
+    String min = ((milli ~/ 1000) ~/ 60).toString().padLeft(3, "0");
 
-    return "$minutes:$seconds:$milliseconds";
+    return "$min:$sec:$millisec";
   }
 
   @override
@@ -63,7 +63,7 @@ class _HomePageState extends State<HomePage> {
                     shape: BoxShape.circle,
                     border: Border.all(
                       color: Color(0xff0395eb),
-                      width: 4,
+                      width: 3,
                     ),
                   ),
                   child: Text(returnFormattedText(), style: TextStyle(
@@ -93,4 +93,4 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
-}//hllo
+}
