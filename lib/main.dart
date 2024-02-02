@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter1/HomePage.dart';
+import 'package:stopwatch/HomePage.dart';
 
 void main() {
   runApp(MyApp());
