@@ -6,7 +6,7 @@ To create a README file for your Flutter stopwatch app, you can follow the templ
 ### Flutter Stopwatch App
 A simple stopwatch app built with Flutter.
 
-###### Features
+#### Features
 Start, stop, and reset functionality.
 Smooth rotation animation while the stopwatch is running.
 Beautiful UI with gradient background and bold text.
